@@ -3,7 +3,20 @@ package practica1.JoseMRosell;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * Seleccion de los individuos de la poblacion.
+ * @author Jose Manuel Rosell Sanchez
+ */
 public class Seleccion {
+	
+	/**
+	 * Seleccion por torneo: Se eligen dos individuos de la poblacion aleatoriamente
+	 * y se realiza un torneo entre los dos, el individuo que mas fitness tenga pasa 
+	 * a la nueva poblacion.
+	 *
+	 * @param poblacion poblacion actual
+	 * @return la nueva poblacion
+	 */
 	public static ArrayList<Individuos> porTorneo(ArrayList<Individuos> poblacion){
 		Random rnd = new Random();
 		ArrayList<Individuos> nueva_poblacion = new ArrayList<Individuos>();
